@@ -14,7 +14,7 @@ function Readconf(file)
 
     for i = 1, #lines, 1 do
         if string.find(lines[i], "---") then
-            goto fin
+            goto done
         end
 
         line = Split(lines[i], "=")
@@ -24,7 +24,7 @@ function Readconf(file)
             conf[i][line[1]] = line[2]
         end
 
-        ::fin::
+        ::done::
     end
 
     return conf
