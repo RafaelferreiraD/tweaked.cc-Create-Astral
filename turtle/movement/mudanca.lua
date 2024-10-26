@@ -1,6 +1,6 @@
 require "lib.storage"
 require "lib.confighandler"
-require "gps-reciver.gps-cc.lua"
+require "gps-reciver.gps-cc"
 
 local function wait_redstone()
     while not redstone.getInput("left") do
