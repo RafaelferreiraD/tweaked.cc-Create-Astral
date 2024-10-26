@@ -5,11 +5,11 @@ function Readconf(file)
     local lines = Readlines(file)
     local line = {}
     local conf = {
-        {
-            ["from_to_str"] = nil,
-            ["setup_str"] = nil,
-            ["step"] = {}
-        }
+---        {
+---            ["from_to_str"] = nil,
+---            ["setup_str"] = nil,
+---            ["step"] = {}
+---        }
     }
 
     for i = 1, #lines, 1 do
