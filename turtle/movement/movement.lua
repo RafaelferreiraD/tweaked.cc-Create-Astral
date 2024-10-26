@@ -15,6 +15,10 @@ local function main()
 
     if s then
         for i = 1, #route["step"], 1 do
+            print(route["step"][i][1])
+            print(route["step"][i][2])
+            print(route["step"][i][3])
+
             Gotolocation(
                 tonumber(route["step"][i][1]),
                 tonumber(route["step"][i][2]),
