@@ -5,7 +5,6 @@ function Readconf(file)
     local lines = Readlines(file)
     local line = {}
     local index = 0
-    local coord = {}
     local conf = {
         ---        {
         ---            ["from_to_str"] = nil,
@@ -23,10 +22,7 @@ function Readconf(file)
                 conf[index]["step"] = {}
             end
             if string.find(line[1], "step") then
-                coord = Split(line[2])
-                conf[index][line[1]][1] = coord[1]
-                conf[index][line[1]][2] = coord[2]
-                conf[index][line[1]][3] = coord[3]
+                conf[index]["step"][#conf[index]["step"] + 1] = Split(line[2])
             else
                 conf[index][line[1]] = line[2]
             end
