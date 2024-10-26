@@ -4,6 +4,7 @@
         "read",
         "write",
         "term",
-        "shell"
+        "shell",
+        "redstone"
     ]
 }

@@ -45,17 +45,7 @@ function Gotolocation(x, y, z)
         end
 
         g_x, g_y, g_z = Getposition()
-
-        print("go")
-        print(x)
-        print(y)
-        print(z)
-
-        print("gps")
-        print(g_x)
-        print(g_y)
-        print(g_z)
-
+        
         -- movimento no z
         if z > g_z then
             for i = lookingto - 1, 1, 1 do
