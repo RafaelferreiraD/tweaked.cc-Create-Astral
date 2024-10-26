@@ -18,7 +18,7 @@ function Readconf(file)
             line = Split(lines[i], "=")
             if string.find(line[1], "index") then
                 index = line[2]
-                conf[index] = {}
+                conf[tonumber(index)] = {}
                 conf[index]["step"] = {}
             end
             if string.find(line[1], "step") then
