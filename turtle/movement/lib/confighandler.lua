@@ -22,7 +22,7 @@ function Readconf(file)
                 index=line[2]
             end
             if string.find(line[1], "step") then
-                conf[index][line[1]][#conf[i][line[1]] + 1] = Split(line[2])
+                conf[index][line[1]][#conf[index][line[1]] + 1] = Split(line[2])
             else
                 conf[index][line[1]] = line[2]
             end
