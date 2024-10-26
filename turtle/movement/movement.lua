@@ -1,5 +1,6 @@
 require "lib.storage"
 require "lib.menu"
+require "gps-reciver.gps-cc.lua"
 
 
 local function main()

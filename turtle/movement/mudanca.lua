@@ -1,14 +1,15 @@
 require "lib.storage"
 require "lib.confighandler"
+require "gps-reciver.gps-cc.lua"
 
-function wait_redstone()
+local function wait_redstone()
     while not redstone.getInput("left") do
         sleep(5)
     end
     return nil
 end
 
-function main()
+local function main()
     local conf = Readconf(shell.resolve("config.conf"))
     local route
     local s
