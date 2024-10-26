@@ -17,8 +17,6 @@ function Readconf(file)
     for i = 1, #lines, 1 do
         if not string.find(lines[i], "---") then
             line = Split(lines[i], "=")
-            print(line[1])
-            print(line[2])
             if string.find(line[1], "index") then
                 index = line[2]
                 conf[index] = {}
