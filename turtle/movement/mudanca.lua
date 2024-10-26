@@ -3,6 +3,7 @@ require "lib.confighandler"
 require "gps-reciver.gps-cc"
 
 local function wait_redstone()
+    sleep(20)
     while not redstone.getInput("left") do
         sleep(5)
     end
