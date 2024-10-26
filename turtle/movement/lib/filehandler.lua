@@ -1,5 +1,5 @@
 function Readlines(file)
-    local file = fs.open("file", "r")
+    local file = fs.open(file, "r")
     local lines = {}
     local line
     while true do
