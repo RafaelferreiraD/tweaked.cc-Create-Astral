@@ -3,6 +3,7 @@
         "fs",
         "read",
         "write",
-        "term"
+        "term",
+        "shell"
     ]
 }

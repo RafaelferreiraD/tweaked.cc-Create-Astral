@@ -6,7 +6,7 @@ require "lib.menu"
 
 local function main()
     -- computercraft:computer_normal  tconstruct:seared_melter
-    local route = Showmenu("config.conf")
+    local route = Showmenu(shell.resolve("config.conf"))
 
     term.clear()
 
