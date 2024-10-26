@@ -12,7 +12,7 @@ function Showmenu(file)
     end
 
     write("Select a route: ")
-    local route = read()
+    local route = tonumber(read())
 
     return conf[route]
 end
