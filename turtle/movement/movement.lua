@@ -16,9 +16,9 @@ local function main()
     if s then
         for i = 1, #route["step"], 1 do
             Gotolocation(
-                route["step"][i][1],
-                route["step"][i][2],
-                route["step"][i][3]
+                tonumber(route["step"][i][1]),
+                tonumber(route["step"][i][2]),
+                tonumber(route["step"][i][3])
             )
         end
 
