@@ -15,6 +15,7 @@ function Readconf(file)
     for i = 1, #lines, 1 do
         if not string.find(lines[i], "---") then
             line = Split(lines[i], "=")
+            print(line[1])
             if string.find(line[1], "step") then
                 conf[i][line[1]][#conf[i][line[1]] + 1] = Split(line[2])
             else
