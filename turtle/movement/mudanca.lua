@@ -35,7 +35,8 @@ local function main()
         route = conf[2]
         print("Initiating route: " .. route["from_to_str"])
         s = Setup(route["setup_str"])
-
+        wait_redstone()
+        
         if s then
             for i = 1, #route["step"], 1 do
                 Gotolocation(
@@ -45,7 +46,6 @@ local function main()
                 )
             end
         end
-        wait_redstone()
     end
 end
 

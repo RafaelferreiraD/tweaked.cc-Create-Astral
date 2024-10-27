@@ -5,6 +5,7 @@
         "write",
         "term",
         "shell",
-        "redstone"
+        "redstone",
+        "sleep"
     ]
 }
